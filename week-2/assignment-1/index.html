@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Celsius to Fahrenheit Converter</title>
+</head>
+
+<body>
+  <h1>Celsius to Fahrenheit Converter</h1>
+  <input type="text" id="celsius" placeholder="Enter Celsius Temperature">
+  <button onclick="convert()">Convert</button>
+  <p id="fahrenheit"></p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function convert() {
+      var celsius = parseInt($("#celsius").val());
+      var fahrenheit = (9 / 5) * celsius + 32;
+      $("#fahrenheit").text("The temperature in Fahrenheit is " + fahrenheit);
+    }
+  </script>
+</body>
+
+</html>

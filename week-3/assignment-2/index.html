@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>12 Months from Now</title>
+</head>
+<body>
+<h1>12 Months from Now</h1>
+<p>The date 12 months from now is: <span id="date"></span></p>
+<script>
+// Get the current date
+const now = new Date();
+
+// Add 12 months to the current date
+const twelveMonthsFromNow = new Date(now.getFullYear() + 1, now.getMonth() + 12, now.getDate());
+
+// Write the date to the page
+document.getElementById("date").innerHTML = twelveMonthsFromNow.toLocaleDateString();
+</script>
+</body>
+</html>

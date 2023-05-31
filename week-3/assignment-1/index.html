@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Friends</title>
+</head>
+<body>
+<h1>My Friends</h1>
+<script>
+// build object with friends array
+const people = {
+  friends: []
+};
+
+// my three friends
+const friend1 = {
+  firstName: "Lauren",
+  lastName: "Kuhlman",
+  id: 1
+};
+
+const friend2 = {
+  firstName: "Lane",
+  lastName: "Kuhlman",
+  id: 2
+};
+
+const friend3 = {
+  firstName: "Holly",
+  lastName: "Denihan",
+  id: 3
+};
+
+// add friends to array
+people.friends.push(friend1);
+people.friends.push(friend2);
+people.friends.push(friend3);
+
+// log as string 
+console.log(JSON.stringify(people));
+  
+// log as object  console.log(people);
+</script>
+</body>
+</html>

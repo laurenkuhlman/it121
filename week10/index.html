@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<button onclick="getRandomCatFact()">Get Random Cat Fact</button>
+
+<script>
+function getRandomCatFact() {
+  let file = "https://cat-fact.herokuapp.com/facts/random?amount=1"
+  fetch (file)
+  .then(response => response.json())
+  .then(data => document.getElementById("demo").innerHTML = data.text);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Display Random Images</title>
+
+</head>
+
+<body>
+
+<img src="apple.jpeg" onclick="changeImg(event)" />
+<img src="banana.jpeg" onclick="changeImg(event)" />
+
+<script>
+
+//Declare and define an array of images
+const myImages = ["apple.jpeg", "orange.jpeg", "kiwi.jpeg", "banana.jpeg"];
+
+//Function to change the image
+function changeImg(event) {
+
+  //Get the clicked image
+  const clickedImage = event.target;
+
+  //Randomly select a new image from the myImages array
+  const newImage = myImages[Math.floor(Math.random() * myImages.length)];
+
+  //Set the src attribute of the clicked image to the new image
+  clickedImage.src = newImage;
+}
+
+</script>
+
+</body>
+
+</html>
